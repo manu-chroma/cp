@@ -27,3 +27,6 @@ typedef long long int lli;
 
 ### Using ```#define``` and ```typedef```
 - ```typedef long long int lli;```
+
+### Strings 
+- Convert to lower case  ``` transform(s1.begin(), s1.end(), s1.begin(), ::tolower);```
