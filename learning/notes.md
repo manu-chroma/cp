@@ -37,4 +37,11 @@ typedef long long int lli;
 
 ### Iterators for STL
 
+Iterating over a container in general
+```
+for (auto it = begin (vector); it != end (vector); ++it) {
+    it->doSomething ();
+}
+```
+
 #### Using String container
