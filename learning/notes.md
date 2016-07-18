@@ -8,7 +8,7 @@
 ### Sorting
 - ```sort()``` fn takes pointer to the array or vector with arguements ```[first,last)```
 Thus, for an array of ```size 5```, use ```sort(0,5)```
-- 
+
 
 ### Presicion for decimal
 - For data types ```float, double & long double``` use the following: 
@@ -28,5 +28,13 @@ typedef long long int lli;
 ### Using ```#define``` and ```typedef```
 - ```typedef long long int lli;```
 
-### Strings 
+### String Manipulation
 - Convert to lower case  ``` transform(s1.begin(), s1.end(), s1.begin(), ::tolower);```
+- Convert string to int : use ``` stoi(string s) ```
+- Convert c-string to int : use ``` atoi(char s[]) ```
+- Convert string to C-style string : use ``` string s = "hello" ; s.c_str(); ```
+
+
+### Iterators for STL
+
+#### Using String container
