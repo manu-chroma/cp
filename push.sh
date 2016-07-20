@@ -1,5 +1,5 @@
 git status
-echo "\n \n \n \n"
+printf "\n \n \n \n"
 echo "Push recent work or nah"
 
 read response
