@@ -44,36 +44,3 @@ long double FindDistanceToSegment(long double x1, long double y1, long double x2
     //returning shortest distance
     return sqrt(diffX * diffX + diffY * diffY);
 }
-
-int main(int argc, char const *argv[])
-{
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL); 
-
-	li n ;
-	cin >> n >> x >> y;
-	vector < pair<li, li> >co ;
-	for (int i = 0; i < n; ++i)
-	{
-		li temp1, temp2;
-		cin >> temp1 >> temp2;
-		co.push_back(make_pair(temp1,temp2));
-	}
-
-	vector <long double> dis;
-	for (int i = 0; i < n; ++i)
-	{
-		dis.push_back(find_distance(co[i].first,co[i].second));
-	}
-
-
-	long double R = *max_element(dis.begin(), dis.end());
-	long double r = *min_element(dis.begin(), dis.end());
-	
-
-	long double ans = pi*(pow(R,2)-pow(r,2));
-	cout.precision(18);
-
-	cout << ans << "\n";
-	
-	return 0;
-}
