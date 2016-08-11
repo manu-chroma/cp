@@ -17,8 +17,9 @@ double a= 1.234567654;
 cout.precision(10);
 cout << fixed << a << "\n";
 ```
+
 ### My Template
-```c++ 
+``` c++ 
 #include <bits/stdc++.h>
 using namespace std;
 
