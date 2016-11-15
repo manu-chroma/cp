@@ -46,3 +46,34 @@ for (auto it = begin (vector); it != end (vector); ++it) {
 ```
 
 #### Using String container
+
+
+## Clarity
+
+Difference between set, map and multiset
+
+map is key->value pair.
+set is just the key. 
+duplicates are not possible. 
+
+multiset allows duplicates as well.
+
+unrordered map: hash tables  
+ordered map: balanced BST
+
+# using vectors to implement graph
+
+For me, the easiest and shortest way is to use a vector and range for loops from C++11.
+Declaration of adjacency list:
+```
+vector<int> E[MAX_NODES];
+Add directed edge u->v:
+E[u].push_back(v);
+Process edges of node v:
+for(int u : E[v])
+{
+    ...
+}
+more in ``vector_graph.cpp`` file.
+If edges also have a weight/capacity associated with them, you'd declare a ``pair<int,int>`` vector instead.
+```
