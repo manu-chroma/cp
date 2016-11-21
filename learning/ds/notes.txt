@@ -1,0 +1,6 @@
+priority queues
+- abstract data structure
+- having pre defined methods to be implemented
+
+heap 
+- way of implementing priority queue
