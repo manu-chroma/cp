@@ -1,0 +1,389 @@
+2.cpp:27:32: error: use of undeclared identifier 'vec'
+            int idx = distance(vec.begin(), it);
+                               ^
+2.cpp:37:36: error: use of undeclared identifier 'vec'
+                int idx = distance(vec.begin(), it)
+                                   ^
+2.cpp:37:52: error: expected ';' at end of declaration
+                int idx = distance(vec.begin(), it)
+                                                   ^
+                                                   ;
+In file included from 2.cpp:1:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/x86_64-linux-gnu/c++/7.3.0/bits/stdc++.h:52:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/ccomplex:39:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/complex:45:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/sstream:38:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/istream:38:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/ios:40:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/char_traits.h:39:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_algobase.h:71:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/predefined_ops.h:65:22: error: invalid operands to binary expression ('std::pair<int, int>' and 'int')
+      { return *__it < __val; }
+               ~~~~~ ^ ~~~~~
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_algobase.h:959:8: note: in instantiation of function template specialization '__gnu_cxx::__ops::_Iter_less_val::operator()<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, const int>' requested here
+          if (__comp(__middle, __val))
+              ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_algobase.h:993:19: note: in instantiation of function template specialization 'std::__lower_bound<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, __gnu_cxx::__ops::_Iter_less_val>' requested here
+      return std::__lower_bound(__first, __last, __val,
+                  ^
+2.cpp:24:19: note: in instantiation of function template specialization 'std::lower_bound<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int>' requested here
+        auto it = lower_bound(intervals.begin(), intervals.end(), p);
+                  ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/system_error:208:3: note: candidate function not viable: no known conversion from 'std::pair<int, int>' to 'const std::error_code' for 1st argument
+  operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+  ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/system_error:282:3: note: candidate function not viable: no known conversion from 'std::pair<int, int>' to 'const std::error_condition' for 1st argument
+  operator<(const error_condition& __lhs,
+  ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/thread:281:3: note: candidate function not viable: no known conversion from 'std::pair<int, int>' to 'thread::id' for 1st argument
+  operator<(thread::id __x, thread::id __y) noexcept
+  ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_pair.h:449:5: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:305:5: note: candidate template ignored: could not match 'reverse_iterator' against 'pair'
+    operator<(const reverse_iterator<_Iterator>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:343:5: note: candidate template ignored: could not match 'reverse_iterator' against 'pair'
+    operator<(const reverse_iterator<_IteratorL>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:888:5: note: candidate template ignored: could not match '__normal_iterator' against 'pair'
+    operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:895:5: note: candidate template ignored: could not match '__normal_iterator' against 'pair'
+    operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:1142:5: note: candidate template ignored: could not match 'move_iterator' against 'pair'
+    operator<(const move_iterator<_IteratorL>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:1148:5: note: candidate template ignored: could not match 'move_iterator' against 'pair'
+    operator<(const move_iterator<_Iterator>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/basic_string.h:6082:5: note: candidate template ignored: could not match 'basic_string' against 'pair'
+    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/basic_string.h:6095:5: note: candidate template ignored: could not match 'basic_string' against 'pair'
+    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/basic_string.h:6107:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::pair<int, int>'
+    operator<(const _CharT* __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_deque.h:293:5: note: candidate template ignored: could not match '_Deque_iterator' against 'pair'
+    operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_deque.h:301:5: note: candidate template ignored: could not match '_Deque_iterator' against 'pair'
+    operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_deque.h:2276:5: note: candidate template ignored: could not match 'deque' against 'pair'
+    operator<(const deque<_Tp, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/array:262:5: note: candidate template ignored: could not match 'array' against 'pair'
+    operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/tuple:1410:5: note: candidate template ignored: could not match 'tuple' against 'pair'
+    operator<(const tuple<_TElements...>& __t,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/unique_ptr.h:717:5: note: candidate template ignored: could not match 'unique_ptr' against 'pair'
+    operator<(const unique_ptr<_Tp, _Dp>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/unique_ptr.h:728:5: note: candidate template ignored: could not match 'unique_ptr' against 'pair'
+    operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/unique_ptr.h:734:5: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_list.h:1918:5: note: candidate template ignored: could not match 'list' against 'pair'
+    operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_tree.h:1543:5: note: candidate template ignored: could not match '_Rb_tree' against 'pair'
+    operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_map.h:1379:2: note: candidate template ignored: could not match 'map' against 'pair'
+        operator<(const map<_K1, _T1, _C1, _A1>&,
+        ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_multimap.h:1078:5: note: candidate template ignored: could not match 'multimap' against 'pair'
+    operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr_base.h:1441:5: note: candidate template ignored: could not match '__shared_ptr' against 'pair'
+    operator<(const __shared_ptr<_Tp, _Lp>& __a,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr_base.h:1452:5: note: candidate template ignored: could not match '__shared_ptr' against 'pair'
+    operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr_base.h:1460:5: note: candidate template ignored: could not match '__shared_ptr<type-parameter-0-0, _Lp>' against 'const int'
+    operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr.h:398:5: note: candidate template ignored: could not match 'shared_ptr' against 'pair'
+    operator<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr.h:408:5: note: candidate template ignored: could not match 'shared_ptr' against 'pair'
+    operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr.h:416:5: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'const int'
+    operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_vector.h:1613:5: note: candidate template ignored: could not match 'vector' against 'pair'
+    operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_queue.h:336:5: note: candidate template ignored: could not match 'queue' against 'pair'
+    operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_set.h:930:5: note: candidate template ignored: could not match 'set' against 'pair'
+    operator<(const set<_Key, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_multiset.h:913:5: note: candidate template ignored: could not match 'multiset' against 'pair'
+    operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_stack.h:117:2: note: candidate template ignored: could not match 'stack' against 'pair'
+        operator<(const stack<_Tp1, _Seq1>&, const stack<_Tp1, _Seq1>&);
+        ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr' against 'pair'
+    _DEFINE_EXPR_BINARY_OPERATOR(<, __less)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:341:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const _Expr<_Dom1, typename _Dom1::value_type>& __v,   \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr' against 'pair'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:354:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const _Expr<_Dom, typename _Dom::value_type>& __v,     \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr<type-parameter-0-0, typename type-parameter-0-0::value_type>' against 'const int'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:367:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const typename _Dom::value_type& __t,                  \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr' against 'pair'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:380:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const _Expr<_Dom,typename _Dom::value_type>& __e,      \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr<type-parameter-0-0, typename type-parameter-0-0::value_type>' against 'const int'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:393:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const valarray<typename _Dom::value_type>& __v,        \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1186:1: note: candidate template ignored: could not match 'valarray' against 'pair'
+_DEFINE_BINARY_OPERATOR(<, __less)
+^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1144:5: note: expanded from macro '_DEFINE_BINARY_OPERATOR'
+    operator _Op(const valarray<_Tp>& __v, const valarray<_Tp>& __w)    \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1186:1: note: candidate template ignored: could not match 'valarray' against 'pair'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1155:5: note: expanded from macro '_DEFINE_BINARY_OPERATOR'
+    operator _Op(const valarray<_Tp>& __v, const _Tp& __t)              \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1186:1: note: candidate template ignored: could not match 'valarray<type-parameter-0-0>' against 'const int'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1165:5: note: expanded from macro '_DEFINE_BINARY_OPERATOR'
+    operator _Op(const _Tp& __t, const valarray<_Tp>& __v)              \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/forward_list.h:1391:5: note: candidate template ignored: could not match 'forward_list' against 'pair'
+    operator<(const forward_list<_Tp, _Alloc>& __lx,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:962:5: note: candidate template ignored: could not match 'sub_match' against 'pair'
+    operator<(const sub_match<_BiIter>& __lhs, const sub_match<_BiIter>& __rhs)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1041:5: note: candidate template ignored: could not match 'basic_string' against 'pair'
+    operator<(const __sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1121:5: note: candidate template ignored: could not match 'sub_match' against 'pair'
+    operator<(const sub_match<_Bi_iter>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1198:5: note: candidate template ignored: could not match 'sub_match<type-parameter-0-0>' against 'const int'
+    operator<(typename iterator_traits<_Bi_iter>::value_type const* __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1272:5: note: candidate template ignored: could not match 'sub_match' against 'pair'
+    operator<(const sub_match<_Bi_iter>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1349:5: note: candidate template ignored: could not match 'sub_match<type-parameter-0-0>' against 'const int'
+    operator<(typename iterator_traits<_Bi_iter>::value_type const& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1429:5: note: candidate template ignored: could not match 'sub_match' against 'pair'
+    operator<(const sub_match<_Bi_iter>& __lhs,
+    ^
+In file included from 2.cpp:1:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/x86_64-linux-gnu/c++/7.3.0/bits/stdc++.h:52:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/ccomplex:39:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/complex:45:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/sstream:38:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/istream:38:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/ios:40:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/char_traits.h:39:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_algobase.h:71:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/predefined_ops.h:90:22: error: invalid operands to binary expression ('int' and 'std::pair<int, int>')
+      { return __val < *__it; }
+               ~~~~~ ^ ~~~~~
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_algo.h:2052:8: note: in instantiation of function template specialization '__gnu_cxx::__ops::_Val_less_iter::operator()<const int, __gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >' requested here
+          if (__comp(__val, __middle))
+              ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_algo.h:2086:19: note: in instantiation of function template specialization 'std::__upper_bound<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, __gnu_cxx::__ops::_Val_less_iter>' requested here
+      return std::__upper_bound(__first, __last, __val,
+                  ^
+2.cpp:33:23: note: in instantiation of function template specialization 'std::upper_bound<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int>' requested here
+            auto it = upper_bound(intervals.begin(), intervals.end(), p);
+                      ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/system_error:208:3: note: candidate function not viable: no known conversion from 'const int' to 'const std::error_code' for 1st argument
+  operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+  ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/system_error:282:3: note: candidate function not viable: no known conversion from 'const int' to 'const std::error_condition' for 1st argument
+  operator<(const error_condition& __lhs,
+  ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/thread:281:3: note: candidate function not viable: no known conversion from 'const int' to 'thread::id' for 1st argument
+  operator<(thread::id __x, thread::id __y) noexcept
+  ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_pair.h:449:5: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:305:5: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'const int'
+    operator<(const reverse_iterator<_Iterator>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:343:5: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'const int'
+    operator<(const reverse_iterator<_IteratorL>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:888:5: note: candidate template ignored: could not match '__normal_iterator<type-parameter-0-0, type-parameter-0-2>' against 'const int'
+    operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:895:5: note: candidate template ignored: could not match '__normal_iterator<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:1142:5: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'const int'
+    operator<(const move_iterator<_IteratorL>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_iterator.h:1148:5: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'const int'
+    operator<(const move_iterator<_Iterator>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/basic_string.h:6082:5: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'const int'
+    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/basic_string.h:6095:5: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'const int'
+    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/basic_string.h:6107:5: note: candidate template ignored: could not match 'const _CharT *' against 'int'
+    operator<(const _CharT* __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_deque.h:293:5: note: candidate template ignored: could not match '_Deque_iterator<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'const int'
+    operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_deque.h:301:5: note: candidate template ignored: could not match '_Deque_iterator<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'const int'
+    operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_deque.h:2276:5: note: candidate template ignored: could not match 'deque<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const deque<_Tp, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/array:262:5: note: candidate template ignored: could not match 'array<type-parameter-0-0, _Nm>' against 'const int'
+    operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/tuple:1410:5: note: candidate template ignored: could not match 'tuple<type-parameter-0-0...>' against 'const int'
+    operator<(const tuple<_TElements...>& __t,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/unique_ptr.h:717:5: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const unique_ptr<_Tp, _Dp>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/unique_ptr.h:728:5: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/unique_ptr.h:734:5: note: candidate template ignored: could not match 'unique_ptr' against 'pair'
+    operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_list.h:1918:5: note: candidate template ignored: could not match 'list<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_tree.h:1543:5: note: candidate template ignored: could not match '_Rb_tree<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3, type-parameter-0-4>' against 'const int'
+    operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_map.h:1379:2: note: candidate template ignored: could not match 'map<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'const int'
+        operator<(const map<_K1, _T1, _C1, _A1>&,
+        ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_multimap.h:1078:5: note: candidate template ignored: could not match 'multimap<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'const int'
+    operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr_base.h:1441:5: note: candidate template ignored: could not match '__shared_ptr<type-parameter-0-0, _Lp>' against 'const int'
+    operator<(const __shared_ptr<_Tp, _Lp>& __a,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr_base.h:1452:5: note: candidate template ignored: could not match '__shared_ptr<type-parameter-0-0, _Lp>' against 'const int'
+    operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr_base.h:1460:5: note: candidate template ignored: could not match '__shared_ptr' against 'pair'
+    operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr.h:398:5: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'const int'
+    operator<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr.h:408:5: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'const int'
+    operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/shared_ptr.h:416:5: note: candidate template ignored: could not match 'shared_ptr' against 'pair'
+    operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_vector.h:1613:5: note: candidate template ignored: could not match 'vector<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_queue.h:336:5: note: candidate template ignored: could not match 'queue<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_set.h:930:5: note: candidate template ignored: could not match 'set<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'const int'
+    operator<(const set<_Key, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_multiset.h:913:5: note: candidate template ignored: could not match 'multiset<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'const int'
+    operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/stl_stack.h:117:2: note: candidate template ignored: could not match 'stack<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+        operator<(const stack<_Tp1, _Seq1>&, const stack<_Tp1, _Seq1>&);
+        ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr<type-parameter-0-0, typename type-parameter-0-0::value_type>' against 'const int'
+    _DEFINE_EXPR_BINARY_OPERATOR(<, __less)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:341:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const _Expr<_Dom1, typename _Dom1::value_type>& __v,   \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr<type-parameter-0-0, typename type-parameter-0-0::value_type>' against 'const int'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:354:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const _Expr<_Dom, typename _Dom::value_type>& __v,     \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr' against 'pair'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:367:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const typename _Dom::value_type& __t,                  \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr<type-parameter-0-0, typename type-parameter-0-0::value_type>' against 'const int'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:380:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const _Expr<_Dom,typename _Dom::value_type>& __e,      \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:416:5: note: candidate template ignored: could not match '_Expr' against 'pair'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/valarray_after.h:393:5: note: expanded from macro '_DEFINE_EXPR_BINARY_OPERATOR'
+    operator _Op(const valarray<typename _Dom::value_type>& __v,        \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1186:1: note: candidate template ignored: could not match 'valarray<type-parameter-0-0>' against 'const int'
+_DEFINE_BINARY_OPERATOR(<, __less)
+^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1144:5: note: expanded from macro '_DEFINE_BINARY_OPERATOR'
+    operator _Op(const valarray<_Tp>& __v, const valarray<_Tp>& __w)    \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1186:1: note: candidate template ignored: could not match 'valarray<type-parameter-0-0>' against 'const int'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1155:5: note: expanded from macro '_DEFINE_BINARY_OPERATOR'
+    operator _Op(const valarray<_Tp>& __v, const _Tp& __t)              \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1186:1: note: candidate template ignored: could not match 'valarray' against 'pair'
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/valarray:1165:5: note: expanded from macro '_DEFINE_BINARY_OPERATOR'
+    operator _Op(const _Tp& __t, const valarray<_Tp>& __v)              \
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/forward_list.h:1391:5: note: candidate template ignored: could not match 'forward_list<type-parameter-0-0, type-parameter-0-1>' against 'const int'
+    operator<(const forward_list<_Tp, _Alloc>& __lx,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:962:5: note: candidate template ignored: could not match 'sub_match<type-parameter-0-0>' against 'const int'
+    operator<(const sub_match<_BiIter>& __lhs, const sub_match<_BiIter>& __rhs)
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1041:5: note: candidate template ignored: could not match 'basic_string<typename iterator_traits<type-parameter-0-0>::value_type, type-parameter-0-1, type-parameter-0-2>' against 'const int'
+    operator<(const __sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1121:5: note: candidate template ignored: could not match 'sub_match<type-parameter-0-0>' against 'const int'
+    operator<(const sub_match<_Bi_iter>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1198:5: note: candidate template ignored: could not match 'sub_match' against 'pair'
+    operator<(typename iterator_traits<_Bi_iter>::value_type const* __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1272:5: note: candidate template ignored: could not match 'sub_match<type-parameter-0-0>' against 'const int'
+    operator<(const sub_match<_Bi_iter>& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1349:5: note: candidate template ignored: could not match 'sub_match' against 'pair'
+    operator<(typename iterator_traits<_Bi_iter>::value_type const& __lhs,
+    ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/bits/regex.h:1429:5: note: candidate template ignored: could not match 'sub_match<type-parameter-0-0>' against 'const int'
+    operator<(const sub_match<_Bi_iter>& __lhs,
+    ^
+5 errors generated.
